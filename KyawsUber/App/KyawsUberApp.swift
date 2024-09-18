@@ -11,7 +11,7 @@ import SwiftUI
 struct KyawsUberApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

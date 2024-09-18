@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		26685A822C89B257006E742C /* KyawsUberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26685A812C89B257006E742C /* KyawsUberApp.swift */; };
-		26685A842C89B257006E742C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26685A832C89B257006E742C /* ContentView.swift */; };
 		26685A862C89B258006E742C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26685A852C89B258006E742C /* Assets.xcassets */; };
 		26685A892C89B258006E742C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26685A882C89B258006E742C /* Preview Assets.xcassets */; };
+		26685A902C89B2AB006E742C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 26685A8F2C89B2AB006E742C /* Contents.json */; };
+		26685A9A2C9B9B5D006E742C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26685A992C9B9B5D006E742C /* HomeView.swift */; };
+		26685A9C2C9B9BB1006E742C /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26685A9B2C9B9BB1006E742C /* UberMapViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26685A7E2C89B257006E742C /* KyawsUber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyawsUber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26685A812C89B257006E742C /* KyawsUberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyawsUberApp.swift; sourceTree = "<group>"; };
-		26685A832C89B257006E742C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26685A852C89B258006E742C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26685A882C89B258006E742C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26685A8F2C89B2AB006E742C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		26685A992C9B9B5D006E742C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		26685A9B2C9B9BB1006E742C /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,12 @@
 		26685A802C89B257006E742C /* KyawsUber */ = {
 			isa = PBXGroup;
 			children = (
-				26685A812C89B257006E742C /* KyawsUberApp.swift */,
-				26685A832C89B257006E742C /* ContentView.swift */,
+				26685A962C9B9B29006E742C /* Models */,
+				26685A952C9B9B23006E742C /* Managers */,
+				26685A942C9B9B13006E742C /* Extensions */,
+				26685A932C9B9B0D006E742C /* Core */,
+				26685A922C9B9B04006E742C /* App */,
+				26685A8F2C89B2AB006E742C /* Contents.json */,
 				26685A852C89B258006E742C /* Assets.xcassets */,
 				26685A872C89B258006E742C /* Preview Content */,
 			);
@@ -65,6 +73,60 @@
 				26685A882C89B258006E742C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26685A922C9B9B04006E742C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				26685A812C89B257006E742C /* KyawsUberApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		26685A932C9B9B0D006E742C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26685A982C9B9B51006E742C /* View */,
+				26685A972C9B9B46006E742C /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26685A942C9B9B13006E742C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26685A952C9B9B23006E742C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		26685A962C9B9B29006E742C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26685A972C9B9B46006E742C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		26685A982C9B9B51006E742C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26685A992C9B9B5D006E742C /* HomeView.swift */,
+				26685A9B2C9B9BB1006E742C /* UberMapViewRepresentable.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +189,7 @@
 			files = (
 				26685A892C89B258006E742C /* Preview Assets.xcassets in Resources */,
 				26685A862C89B258006E742C /* Assets.xcassets in Resources */,
+				26685A902C89B2AB006E742C /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26685A842C89B257006E742C /* ContentView.swift in Sources */,
 				26685A822C89B257006E742C /* KyawsUberApp.swift in Sources */,
+				26685A9C2C9B9BB1006E742C /* UberMapViewRepresentable.swift in Sources */,
+				26685A9A2C9B9B5D006E742C /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
