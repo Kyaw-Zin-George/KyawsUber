@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        //adding maps on the phone
         UberMapViewRepresentable()
             .ignoresSafeArea()
     }
